@@ -1,0 +1,13 @@
+[Unit]
+Description=uWSGI instance to serve API Grupo Forus
+After=network.target
+
+[Service]
+User=forus
+Group=forus
+WorkingDirectory=/var/www/html/api
+Environment="PATH=/var/www/html/api/api_venv/bin"
+ExecStart=/var/www/html/api/api_venv/bin/uwsgi --ini api.ini
+
+[Install]
+WantedBy=multi-user.target
