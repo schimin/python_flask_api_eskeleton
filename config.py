@@ -23,7 +23,6 @@ if ENVIRONMENT == 'production':
     TESTING = False
     DEBUG = False
     ENV = 'production'
-    #SERVER_NAME = 'api.grupoforus.com.br'
     SERVER_NAME = 'ip:porta'
     print('Ambiente de Produção', SERVER_NAME)
 
@@ -31,7 +30,6 @@ if ENVIRONMENT == 'testing':
     TESTING = True
     DEBUG = False
     ENV = 'testing'
-    #SERVER_NAME = 'api-test.grupoforus.com.br'
     SERVER_NAME = 'ip:porta'
     print('Ambiente de Teste', SERVER_NAME)
 
