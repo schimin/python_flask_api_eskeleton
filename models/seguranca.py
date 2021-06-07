@@ -6,7 +6,7 @@ import json
 
 class Seguranca():
     """def __init__(self):
-        self.auth_s = URLSafeSerializer("Chave Secret@ Grupo Forvs", "auth")"""
+        self.auth_s = URLSafeSerializer("Chave Secreta 00000 1 ", "auth")"""
 
 
     def check(self, token):
@@ -16,10 +16,7 @@ class Seguranca():
 
         try:
             print(token)
-            #auth_s = URLSafeSerializer("Chave Secret@ Grupo Forvs", "auth")
-            #token1 = auth_s.dumps({"id": 5, "name": "itsdangerous"})
-
-            # https://www.base64encode.org/
+           
         
             base64_bytes                = token.encode('ascii')
             message_bytes               = base64.b64decode(base64_bytes)
